@@ -1,0 +1,17 @@
+{
+  "name": "Regi Bazar",
+  "short_name": "Regi Bazar",
+  "description": "La mejor calidad para tu hogar",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fff5f7",
+  "theme_color": "#ec4899",
+  "icons": [
+    {
+      "src": "/assets/regi-logo.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any"
+    }
+  ]
+}

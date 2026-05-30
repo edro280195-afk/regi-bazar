@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://regi-bazar.com/sitemap.xml
