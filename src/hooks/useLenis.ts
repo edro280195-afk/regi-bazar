@@ -14,16 +14,18 @@ export function useLenis(enabled: boolean): LenisScroll {
   useEffect(() => {
     if (!enabled) return;
 
+    // Scroll cinematográfico: easeOutExpo da una inercia sedosa y "pesada" premium.
     const lenis = new Lenis({
-      lerp: 0.065,
+      duration: 1.25,
+      easing: (t: number) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
       smoothWheel: true,
-      wheelMultiplier: 0.8,
-      touchMultiplier: 1.15,
+      wheelMultiplier: 0.9,
+      touchMultiplier: 1.5,
       infinite: false,
       orientation: 'vertical',
       gestureOrientation: 'vertical',
       syncTouch: true,
-      syncTouchLerp: 0.05
+      syncTouchLerp: 0.075
     });
 
     lenisRef.current = lenis;

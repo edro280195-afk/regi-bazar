@@ -9,7 +9,7 @@ export function HowToBuy() {
       <SectionTitle
         eyebrow="Cómo comprar"
         title="Tres pasitos y listo, hermosa"
-        description="Comprar en Regi Bazar se siente como separar un regalito para tu casa."
+        description="Comprar en el live es facilísimo y se siente como prepararte un regalito para tu casa."
       />
 
       <div className="mx-auto mt-12 grid max-w-6xl gap-5 md:grid-cols-3">

@@ -20,7 +20,7 @@ export function LiveSection() {
       <SectionTitle
         eyebrow="Próximo Live"
         title="Prepárate para enamorarte en vivo"
-        description="El live es donde apartas tus piezas favoritas para el hogar y nosotras te cuidamos el resto."
+        description="En el live ves los productos en vivo, pides lo que te encanta y te armamos tu bolsita. Lo demás, nosotras lo cuidamos."
       />
 
       <motion.div

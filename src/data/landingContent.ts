@@ -5,12 +5,13 @@ import {
   Gift,
   HeartHandshake,
   Home,
+  MapPin,
   MessageCircleHeart,
   PackageCheck,
+  ShoppingBag,
   Sparkles,
   Star,
-  TicketPercent,
-  Truck
+  TicketPercent
 } from 'lucide-react';
 
 export const brand = {
@@ -49,22 +50,22 @@ export interface StepItem {
 export const buyingSteps: StepItem[] = [
   {
     id: 'live',
-    title: 'Entra al live',
-    description: 'Te esperamos en Facebook con piezas bonitas para tu hogar y dinámica sencilla.',
+    title: 'Conéctate al live',
+    description: 'Anunciamos el día y la hora en Facebook. Entra a la transmisión y mira los productos en vivo.',
     icon: Facebook,
     accent: 'from-pink-300 to-pink-500'
   },
   {
-    id: 'aparta',
-    title: 'Aparta tu pieza',
-    description: 'Comenta en el live o mándanos mensaje por Messenger para separar lo que te encantó.',
-    icon: MessageCircleHeart,
+    id: 'pide',
+    title: 'Pide lo que te encante',
+    description: 'Durante el live apartas tus artículos y te vamos armando tu bolsita con todo lo que elijas.',
+    icon: ShoppingBag,
     accent: 'from-fuchsia-300 to-violet-500'
   },
   {
     id: 'recibe',
-    title: 'Recibe tu pedido',
-    description: 'Te mandamos tu link de seguimiento y preparamos todo con moñito y mucho cariño.',
+    title: 'Recibe tu link y tu pedido',
+    description: 'Al cerrar el live te mandamos tu enlace con tu pedido, fecha de entrega y formas de pago. ¡Y rastreas tu entrega en vivo!',
     icon: PackageCheck,
     accent: 'from-rose-300 to-pink-600'
   }
@@ -95,10 +96,10 @@ export const benefits: BenefitItem[] = [
   },
   {
     id: 'seguimiento',
-    title: 'Seguimiento en vivo',
-    description: 'Mira el avance de tu pedido con un link personal, claro y precioso.',
-    icon: Truck,
-    sparkle: '📦'
+    title: 'Rastreo en vivo',
+    description: 'El día de tu entrega ves tu lugar en la ruta y al repartidor moverse en el mapa, en tiempo real.',
+    icon: MapPin,
+    sparkle: '📍'
   },
   {
     id: 'atencion',

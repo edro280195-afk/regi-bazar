@@ -42,8 +42,8 @@ export function TrackOrder() {
     <section id="rastrea" className="section-shell relative z-10">
       <SectionTitle
         eyebrow="Rastrea tu pedido"
-        title="¿Ya compraste? Mira dónde va"
-        description="Pega tu link o código y te llevamos directo al seguimiento de tu pedido."
+        title="¿Ya compraste? Sigue tu pedido en vivo"
+        description="Pega tu link o código y entra a tu pedido: tus artículos, tu fecha de entrega, las formas de pago y el rastreo del repartidor en tiempo real."
       />
 
       <motion.form

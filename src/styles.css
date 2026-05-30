@@ -871,28 +871,138 @@ input:focus-visible {
   line-height: 1.75;
 }
 
-/* ─── Sparkle Trail ─── */
-.sparkle-trail {
+/* ─── Fondo ambiental (parallax de profundidad) ─── */
+.ambient-bg {
   position: fixed;
-  translate: -50% -50%;
-  color: #ec4899;
-  font-size: 1.2rem;
-  text-shadow: 0 0 20px rgba(236, 72, 153, 0.5);
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
 }
 
-/* ─── Floating Decor ─── */
-.decor-float {
+.ambient-orb {
   position: absolute;
-  display: inline-flex;
-  filter: drop-shadow(0 10px 20px rgba(236, 72, 153, 0.12));
-  opacity: 0.65;
-  animation: decorFloat var(--duration) ease-in-out infinite;
-  user-select: none;
-  transition: transform 300ms ease;
+  border-radius: 50%;
+  filter: blur(85px);
+  will-change: transform;
 }
 
-.decor-float:hover {
-  transform: scale(1.2);
+.ambient-orb-1 {
+  width: 60vw;
+  height: 60vw;
+  max-width: 720px;
+  max-height: 720px;
+  top: -12%;
+  right: -12%;
+  background: radial-gradient(circle, rgba(244, 114, 182, 0.30), rgba(244, 114, 182, 0) 70%);
+}
+
+.ambient-orb-2 {
+  width: 55vw;
+  height: 55vw;
+  max-width: 640px;
+  max-height: 640px;
+  bottom: 2%;
+  left: -14%;
+  background: radial-gradient(circle, rgba(167, 139, 250, 0.26), rgba(167, 139, 250, 0) 70%);
+}
+
+.ambient-orb-3 {
+  width: 44vw;
+  height: 44vw;
+  max-width: 520px;
+  max-height: 520px;
+  top: 40%;
+  left: 40%;
+  background: radial-gradient(circle, rgba(236, 72, 153, 0.16), rgba(251, 207, 232, 0) 72%);
+}
+
+/* ─── Intro cinematográfica ─── */
+html.intro-lock,
+html.intro-lock body {
+  overflow: hidden !important;
+  height: 100%;
+}
+
+.intro-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.intro-panel {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 51%;
+  background: linear-gradient(160deg, #ffe4ef 0%, #fbcfe8 40%, #f9a8d4 100%);
+  will-change: transform;
+}
+
+.intro-panel-top {
+  top: 0;
+  box-shadow: 0 12px 44px rgba(190, 24, 93, 0.12);
+}
+
+.intro-panel-bottom {
+  bottom: 0;
+  box-shadow: 0 -12px 44px rgba(190, 24, 93, 0.12);
+}
+
+.intro-stage {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+  will-change: transform, opacity, filter;
+}
+
+.intro-logo {
+  width: clamp(86px, 16vw, 132px);
+  height: auto;
+  border-radius: 28px;
+  box-shadow: 0 18px 50px rgba(190, 24, 93, 0.28);
+  margin-bottom: 1.1rem;
+}
+
+.intro-name {
+  position: relative;
+  margin: 0;
+  display: flex;
+  perspective: 700px;
+  font-family: 'Dancing Script', cursive;
+  font-weight: 700;
+  font-size: clamp(3rem, 12vw, 6.5rem);
+  line-height: 1;
+  color: #9d174d;
+  text-shadow: 0 14px 40px rgba(190, 24, 93, 0.22);
+}
+
+.intro-name span {
+  display: inline-block;
+  transform-origin: bottom;
+  white-space: pre;
+}
+
+.intro-tagline {
+  margin-top: 0.85rem;
+  font-weight: 700;
+  font-size: clamp(0.95rem, 2.6vw, 1.3rem);
+  color: #be185d;
+}
+
+.intro-shine {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(105deg, transparent 36%, rgba(255, 255, 255, 0.85) 50%, transparent 64%);
+  mix-blend-mode: overlay;
 }
 
 /* ─── Keyframes ─── */

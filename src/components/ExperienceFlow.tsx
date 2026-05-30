@@ -1,35 +1,35 @@
 import { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
-import { BadgeCheck, Gift, MessageCircleHeart, Route, Sparkles } from 'lucide-react';
+import { MapPin, MessageCircleHeart, PackageCheck, Sparkles, Wallet } from 'lucide-react';
 import { SectionTitle } from './SectionTitle';
 
 const flowItems = [
   {
     id: 'live',
-    label: 'Te enamoras en el live',
-    copy: 'Ves las piezas en movimiento, preguntas por Messenger y apartas sin vueltas.',
+    label: 'Entras al live',
+    copy: 'Te avisamos en Facebook el día y la hora. Conéctate, mira los productos en vivo y pide lo que te encante.',
     icon: Sparkles,
     color: 'from-pink-400 to-pink-500'
   },
   {
-    id: 'vip',
-    label: 'Tu compra suma',
-    copy: 'Cada pedido alimenta tus RegiPuntos y tu nivel de clienta consentida.',
-    icon: BadgeCheck,
+    id: 'pedido',
+    label: 'Armamos tu pedido',
+    copy: 'Al cerrar el live capturamos tu bolsita y te llega tu link con tus artículos, fecha de entrega y formas de pago.',
+    icon: PackageCheck,
     color: 'from-violet-400 to-purple-500'
   },
   {
-    id: 'tracking',
-    label: 'Recibes tu link',
-    copy: 'El enlace bonito te dice dónde va tu pedido y cuánto falta para recibirlo.',
-    icon: Route,
+    id: 'pago',
+    label: 'Eliges cómo pagar',
+    copy: 'Desde tu mismo enlace revisas tu pedido y escoges tu forma de pago, sin enredos.',
+    icon: Wallet,
     color: 'from-fuchsia-400 to-rose-500'
   },
   {
-    id: 'gift',
-    label: 'Llega con detalle',
-    copy: 'Tu pedido se siente como regalito: claro, cuidado y preparado con cariño.',
-    icon: Gift,
+    id: 'tracking',
+    label: 'Rastreas tu entrega en vivo',
+    copy: 'El día de entrega ves tu lugar en la ruta y al repartidor moverse en el mapa, en tiempo real.',
+    icon: MapPin,
     color: 'from-rose-400 to-pink-600'
   }
 ];
@@ -51,7 +51,7 @@ export function ExperienceFlow() {
             align="left"
             eyebrow="Experiencia Regi"
             title="Todo fluye como abrir una cajita"
-            description="La magia no está solo en vender. Está en que la clienta siempre sepa qué sigue y se sienta acompañada."
+            description="Desde que entras al live hasta que tu pedido llega a tu puerta, siempre sabes qué sigue y te sientes acompañada."
           />
           <motion.a
             className="btn-primary mt-8 w-full sm:w-auto justify-center"

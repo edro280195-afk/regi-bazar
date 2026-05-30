@@ -120,7 +120,7 @@ export function Hero() {
             transition={{ duration: 0.5, delay: 1.05, ease: [0.22, 1, 0.36, 1] }}
           >
             Bienvenida, hermosa. Aquí encuentras sábanas, colchas, edredones y detalles de
-            cocina en lives llenos de cariño, moñitos y seguimiento bonito para tu pedido.
+            cocina en lives llenos de cariño, con moñitos en tu pedido y rastreo de tu entrega en vivo.
           </motion.p>
 
           <motion.div
